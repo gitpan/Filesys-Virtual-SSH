@@ -1,4 +1,4 @@
-README for Filesys::Virtual::SSH 0.01
+README for Filesys::Virtual::SSH 0.02
 
 =head1 NAME
 
@@ -7,12 +7,12 @@ Filesys::Virtual::SSH - remote execution Virtual Filesystem
 =head1 SYNOPSIS
 
  use Filesys::Virtual::SSH;
- my $fs = Filesys::Virtual::SSH->new(
+ my $fs = Filesys::Virtual::SSH->new({
      host      => 'localhost',
      cwd       => '/',
      root_path => '/',
      home_path => '/home',
- );
+ });
  my @files = $fs->list("/");
 
  # a deeply inneffecient equivalent to
@@ -26,6 +26,7 @@ Filesys::Virtual::SSH - remote execution Virtual Filesystem
 This module has external dependencies on the following modules:
 
  Filesys::Virtual
+ String::ShellQuote
  perl	5.006
 
 =head1 INSTALLATION
@@ -43,7 +44,12 @@ What changed over the last 3 revisions
 
 =over
 
-=item 0.01	Friday 30th April, 2003
+=item 0.02	Friday 30th April, 2004
+
+	unstealthed the dependency on String::ShellQuote, fixed a docubug
+
+
+=item 0.01	Friday 30th April, 2004
 
 	Initial CPAN release
 

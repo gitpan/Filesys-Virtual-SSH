@@ -7,7 +7,8 @@ WriteMakefile
           'PREREQ_PM' => {
                            'Test::More' => 0,
                            'File::Slurp::Tree' => 0,
-                           'Filesys::Virtual' => 0
+                           'Filesys::Virtual' => 0,
+                           'String::ShellQuote' => 0
                          },
           'INSTALLDIRS' => 'site',
           'PL_FILES' => {}
