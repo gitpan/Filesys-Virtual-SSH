@@ -5,10 +5,11 @@ WriteMakefile
           'NAME' => 'Filesys::Virtual::SSH',
           'VERSION_FROM' => 'lib/Filesys/Virtual/SSH.pm',
           'PREREQ_PM' => {
-                           'Test::More' => 0,
-                           'File::Slurp::Tree' => 0,
-                           'Filesys::Virtual' => 0,
-                           'String::ShellQuote' => 0
+                           'File::Slurp::Tree' => '0',
+                           'Filesys::Virtual' => '0',
+                           'Filesys::Virtual::Plain' => '0',
+                           'String::ShellQuote' => '0',
+                           'Test::More' => '0'
                          },
           'INSTALLDIRS' => 'site',
           'PL_FILES' => {}

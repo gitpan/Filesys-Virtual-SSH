@@ -1,12 +1,13 @@
---- #YAML:1.0
+---
 name: Filesys-Virtual-SSH
-version: 0.02
+version: 0.03
 author:
   - Richard Clamp <richardc@unixbeard.net>
 abstract: remote execution Virtual Filesystem
 license: perl
 requires:
   Filesys::Virtual: 0
+  Filesys::Virtual::Plain: 0
   String::ShellQuote: 0
   perl: 5.006
 build_requires:
@@ -15,5 +16,5 @@ build_requires:
 provides:
   Filesys::Virtual::SSH:
     file: lib/Filesys/Virtual/SSH.pm
-    version: 0.02
-generated_by: Module::Build version 0.24
+    version: 0.03
+generated_by: Module::Build version 0.25
